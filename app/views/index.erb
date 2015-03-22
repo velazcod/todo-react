@@ -6,5 +6,15 @@
   </head>
   <body>
     <div id="content"></div>
+    <script type="text/jsx" src="assets/javascripts/todoItem.jsx"></script>
+    <script type="text/jsx" src="assets/javascripts/todoList.jsx"></script>
+    <script type="text/jsx" src="assets/javascripts/todoForm.jsx"></script>
+    <script type="text/jsx" src="assets/javascripts/todoBox.jsx"></script>
+    <script type="text/jsx">
+      React.render(
+        <TodoBox />,
+        document.getElementById('content')
+      );
+    </script>
   </body>
 </html>
