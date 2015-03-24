@@ -11,7 +11,7 @@ var TodoItem = React.createClass({
     if (this.state.visible) {
       return (
         <div className="todo">
-          {this.props.todo.text} <TodoItemDelete clickHandler={this.removeItem} />
+          <TodoItemDelete clickHandler={this.removeItem} /> {this.props.todo.text}
         </div>
       );
     } else {
